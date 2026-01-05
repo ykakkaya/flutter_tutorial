@@ -13,52 +13,50 @@ class _TextIconImageState extends State<TextIconImage> {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.blue),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            'Text Icon Image Page Text Icon Image Page',
+            'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+            textAlign: TextAlign.start,
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
             style: TextStyle(
-              fontSize: 30,
-              color: Colors.red,
+              fontSize: 26,
+              color: Colors.amber,
+              backgroundColor: Colors.red,
               fontWeight: FontWeight.bold,
               fontStyle: FontStyle.italic,
+              decoration: TextDecoration.lineThrough,
             ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
           ),
-
-          Icon(Icons.star, size: 50, color: Colors.amber),
 
           RichText(
             text: TextSpan(
-              text: "Merhaba",
-              style: TextStyle(fontSize: 16, color: Colors.black),
+              text: 'Giriş',
+              style: TextStyle(color: Colors.black, fontSize: 20),
               children: [
                 TextSpan(
-                  text: " Flutter ",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
-                    fontSize: 20,
-                    decoration: TextDecoration.underline,
-                  ),
+                  text: 'Yapmak İçin',
+                  style: TextStyle(color: Colors.purple, fontSize: 30),
                 ),
                 TextSpan(
-                  text: "Dünyası",
+                  text: 'Tıklayın',
                   style: TextStyle(
-                    fontStyle: FontStyle.italic,
                     color: Colors.red,
-                    fontSize: 16,
+                    fontSize: 15,
+                    decoration: TextDecoration.underline,
                   ),
                 ),
               ],
             ),
           ),
 
+          Icon(Icons.person, size: 50, color: Colors.green),
+          Image.asset('assets/images/icecekler.jpg'),
           Image.network(
-            'https://avatars.mds.yandex.net/i?id=fe084f04bbb8efac2b455846ed11e444fb7f4be1-4452347-images-thumbs&n=13',
+            'https://mir-s3-cdn-cf.behance.net/projects/original/fd0f7b74634809.Y3JvcCw3ODEsNjExLDAsMjUx.jpg',
           ),
-
-          SizedBox(width: 200, height: 200, child: Placeholder()),
+          SizedBox(height: 30, width: 30, child: Placeholder()),
         ],
       ),
     );
