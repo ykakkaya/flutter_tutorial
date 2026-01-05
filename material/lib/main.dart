@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material/views/column_row.dart';
 import 'package:material/views/container_page.dart';
 import 'package:material/views/scaffold_page.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.amber)),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: ContainerPage(),
+      home: ColumnRowWidget(),
       debugShowCheckedModeBanner: false,
       //Debug grid yapısını etkinleştirir
       //debugShowMaterialGrid: true,
