@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material/views/padding_center_avatar.dart';
 import 'package:material/views/text_icon_image.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.amber)),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: TextIconImage(),
+      home: PaddingCenterAvatar(),
       debugShowCheckedModeBanner: false,
       //Debug grid yapısını etkinleştirir
       //debugShowMaterialGrid: true,
