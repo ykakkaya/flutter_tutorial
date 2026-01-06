@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:material/views/padding_center_avatar.dart';
-import 'package:material/views/text_icon_image.dart';
+import 'package:material/views/login_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.amber)),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: PaddingCenterAvatar(),
+      home: LoginDemo(),
       debugShowCheckedModeBanner: false,
       //Debug grid yapısını etkinleştirir
       //debugShowMaterialGrid: true,
