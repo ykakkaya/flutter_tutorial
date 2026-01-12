@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_lifecycle/uygulama.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,15 +10,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: MyHomePage(),
+      home: UygulamaPage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({super.key});
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -44,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-         
           _counter++;
           setState(() {});
         },
